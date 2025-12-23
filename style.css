@@ -1,0 +1,61 @@
+@import "modern-normalize";
+
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+.image {
+    width: 700px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.form_class {
+
+}
+
+.header_information {
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+.Names,
+.personal_info,
+.allPasswords {
+    width: 200px;
+    outline: 2px solid red;
+}
+
+.Pair {
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.information {
+    background-color: #EAEDF0;
+    
+}
