@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'Amble';
+    src: url('fonts/Amble-Regular.woff2') format('woff2'),
+        url('fonts/Amble-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "modern-normalize";
 
 :root {
   line-height: 1.5;
 }
+
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
   margin: 0;
@@ -23,39 +33,81 @@ img {
   max-inline-size: 100%;
 }
 
+br {
+  margin-top: 400px;
+}
+
+body {
+  background-color:#EAEDF0;;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
 .image {
-    width: 700px;
-    height: 100vh;
+  width: 40%;
+  height: 100vh;
+  
 }
 
 .container {
-    display: flex;
+  display: flex;
+  align-items: center;
+  outline: 2px solid red;
+  width: 100%;
+  height: 100%;
 }
 
 .form_class {
-
+  height: 100%;
+  width: 100%;
 }
 
 .header_information {
-    font-size: 30px;
-    font-weight: 100px;
+  font-size: 30px;
+  font-weight: 100px;  
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  margin-left: 40px;
+  outline: 2px solid red;
 }
 
 .Names,
 .personal_info,
 .allPasswords {
-    width: 200px;
+  width: 200px;
     outline: 2px solid red;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.Names input[type="text"],
+.personal_info input[type="email"],
+.allPasswords input[type="password"] {
+  border: 1px solid;
+  border-radius: 3px;
 }
 
 .Pair {
-    display: flex;
-    gap: 100px;
-    justify-content: flex-start;
-    margin-left: 30px;
+  display: flex;
+  gap: 100px;
+  justify-content: flex-start;
+  margin-left: 30px;
+  
 }
 
 .information {
-    background-color: #EAEDF0;
-    
+  background-color: white; 
+  margin-top: 100px;
+  font-family: "Amble",sans-serif;
+  outline: 2px solid blue;
+  width: 100vh;
+  }
+
+.Encourage {
+margin-left: 28px;
+font-weight: 530;
+font-size: 2rem;
 }
+
+
