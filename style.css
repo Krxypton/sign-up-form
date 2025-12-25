@@ -7,6 +7,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "modern-normalize";
 
 :root {
@@ -43,23 +52,51 @@ body {
  
 }
 
+.image img {
+  height: 100%;
+  width: 100%;
+}
+
 .image {
-  width: 40%;
-  height: 100vh;
+  width: 37%;
+  position: relative;
   
+}
+
+.tides-text {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  font-family: "Norse", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 70px;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.icon {
+  max-width: 80px;
 }
 
 .container {
   display: flex;
-  align-items: center;
-  outline: 2px solid red;
-  width: 100%;
-  height: 100%;
+  /* outline: 2px solid red; */
+  width: 100vw;
+  height: 100vh;
 }
 
 .form_class {
   height: 100%;
   width: 100%;
+  outline: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .header_information {
@@ -68,8 +105,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 850px;
-  margin-left: 40px;
-  outline: 2px solid red;
+  /* margin-left: 40px; */
+  /* outline: 2px solid red; */
 }
 
 .Names,
@@ -98,10 +135,9 @@ body {
 
 .information {
   background-color: white; 
-  margin-top: 100px;
   font-family: "Amble",sans-serif;
   outline: 2px solid blue;
-  width: 100vh;
+  width: 100%;
   }
 
 .Encourage {
@@ -109,5 +145,3 @@ margin-left: 28px;
 font-weight: 530;
 font-size: 2rem;
 }
-
-
