@@ -14,7 +14,7 @@
                 </div>
             </div>
             <form class="form_class" action="example.com/path" method="post">
-                <div class="header_information">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign  up now to  get started. You know you want to.</div>
+                <div class="header_information">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> Sign up <em> now </em> to  get started.<br> <span class="space">You <em> know </em> you want to.</span></div>
                 <div class="information">
                     <div class="Encourage">Let's do this!</div>
                     <div class="Pair">
@@ -40,18 +40,18 @@
                     <div class="Pair">
                         <div class="allPasswords">
                             <label for="password">PASSWORD*</label>
-                            <input type="password" name="hidden-password" id="password">
+                            <input type="password" name="hidden-password" id="password" required>
                         </div>
                         <div class="allPasswords">
                             <label for="confirm">CONFIRM PASSWORD*</label>
-                            <input type="password" name="confirm-password" id="confirm"/>
+                            <input type="password" name="confirm-password" id="confirm" required/>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <button type="submit">Create Account</button>
+                    <button type="button">Create Account</button>
                 </div>
-                <div>Already have an account? <a href="#">Log in</a></div>
+                <div class="account">Already have an account? <a href="#">Log in</a></div>
             </form>
         </div>
     </body>

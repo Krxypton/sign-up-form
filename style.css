@@ -22,6 +22,10 @@
   line-height: 1.5;
 }
 
+html,body {
+  height: 100%;
+  margin: 0;
+}
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
   margin: 0;
@@ -42,6 +46,9 @@ img {
   max-inline-size: 100%;
 }
 
+.italics {
+  font-style: italic;
+}
 br {
   margin-top: 400px;
 }
@@ -55,12 +62,14 @@ body {
 .image img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .image {
-  width: 37%;
+  width: 46%;
   position: relative;
-  
+  height: 100vh;
 }
 
 .tides-text {
@@ -79,13 +88,17 @@ body {
   
 }
 
+.space {
+  display: inline-block;
+  margin-top: 30px;
+}
+
 .icon {
   max-width: 80px;
 }
 
 .container {
   display: flex;
-  /* outline: 2px solid red; */
   width: 100vw;
   height: 100vh;
 }
@@ -93,55 +106,84 @@ body {
 .form_class {
   height: 100%;
   width: 100%;
-  outline: 2px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #dddcdcd2;
 }
 
 .header_information {
-  font-size: 30px;
-  font-weight: 100px;  
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 25px;
+  font-weight: bold;  
   max-width: 850px;
-  /* margin-left: 40px; */
+  margin-left: 40px;
   /* outline: 2px solid red; */
+  margin-top: 30px;
+  padding-top: 1px;
 }
 
 .Names,
 .personal_info,
 .allPasswords {
   width: 200px;
-    outline: 2px solid red;
+  /* outline: 2px solid red; */
   font-size: 15px;
   margin-bottom: 20px;
 }
 
 .Names input[type="text"],
 .personal_info input[type="email"],
+.personal_info input[type="tel"],
 .allPasswords input[type="password"] {
-  border: 1px solid;
-  border-radius: 3px;
+  border: 3px solid #E5E7EB;
+  border-radius: 7px;
+  /* padding: 6px 20px; */
+  height: 30px;
+  width: 200px;
+}
+
+.personal_info input:invalid{
+  border-color: red;
 }
 
 .Pair {
   display: flex;
   gap: 100px;
   justify-content: flex-start;
-  margin-left: 30px;
+  margin-left: 40px;
   
 }
 
 .information {
-  background-color: white; 
+  background-color: #ffffffad; 
   font-family: "Amble",sans-serif;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
   width: 100%;
+  height: 300px
   }
 
 .Encourage {
-margin-left: 28px;
-font-weight: 530;
-font-size: 2rem;
+  margin-left: 40px;
+  font-weight: 530;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #6d8ce0;
+  border-radius: 15px;
+  margin-left: 40px;
+  margin-top: 0;
+  padding: 15px 45px;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.account {
+  margin-left: 40px;
+}
+
+a {
+  color: #6d8ce0;;
 }
